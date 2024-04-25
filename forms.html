@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>FORMS</h1>
+
+    <form action="result.html">
+      <section id="name">
+        <!-- NAME -->
+        <label for="isim">Isim</label> <br />
+        <input
+          type="text"
+          id="isim"
+          placeholder="Adinizi giriniz"
+          name="isim"
+          value=""
+          required
+        />
+        <br /><br />
+
+        <!-- EMAIL -->
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email giriniz"
+          required
+        />
+
+        <br /><br />
+
+        <!-- PASSWORD -->
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="En az 8 karakter giriniz"
+          required
+        />
+        <br /><br />
+
+        <!-- AGE -->
+        <label for="age">Age</label><br />
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="0"
+          max="160"
+          placeholder="Yasinizi giriniz"
+        />
+        <br /><br />
+
+        <!-- GENDER -->
+        <label for="gender">Gender</label><br />
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="erkek" name="gender" value="Erkek" />
+
+        <label for="kadin">Kadin</label>
+        <input type="radio" id="kadin" name="gender" value="Kadin" />
+
+        <label for="none">None</label>
+        <input type="radio" id="none" name="gender" value="None" checked />
+        <br /><br />
+      </section>
+
+      <section id="buttons">
+        <input type="submit" value="Kaydet" />
+        <input type="reset" value="Sil" />
+      </section>
+    </form>
+  </body>
+</html>
